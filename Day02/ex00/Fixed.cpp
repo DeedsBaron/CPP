@@ -5,7 +5,7 @@ Fixed::Fixed(void) : fixed_p_value(0)
 	std::cout << "Default constructor called\n";
 }
 
-Fixed::Fixed(const Fixed & obj)
+Fixed::Fixed(const Fixed& obj)
 {
 	std::cout << "Copy constructor called\n";
 	fixed_p_value = obj.getRawBits();

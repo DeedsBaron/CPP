@@ -7,7 +7,7 @@ private:
 	static const int	fract_bits = 8;
 public:
 	Fixed(void);
-	Fixed(const Fixed & obj);
+	Fixed(const Fixed& obj);
 	~Fixed(void);
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);

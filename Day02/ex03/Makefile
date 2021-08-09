@@ -5,7 +5,7 @@ CC = clang++
 FLAGS = -std=c++98 -MMD -Wall -Wextra -Werror
 DIR_S =	./
 DIR_O =	./obj
-SOURCES	= main.cpp Fixed.cpp Point.cpp
+SOURCES	= main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 SRCS = $(addprefix $(DIR_S)/,${SOURCES})
 OBJS = $(addprefix $(DIR_O)/,${SOURCES:.cpp=.o})

@@ -13,8 +13,9 @@ public:
 
 	const Fixed& get_x(void) const;
 	const Fixed& get_y(void) const;
-
 	Point&	operator=(const Point& ins);
+	bool 	operator==(const Point& right) const;
 };
 
-std::ostream& operator<<(std::ostream& os, const Point& obj);
+std::ostream& 	operator<<(std::ostream& os, const Point& obj);
+bool			bsp(Point const a, Point const b, Point const c, Point const point);
