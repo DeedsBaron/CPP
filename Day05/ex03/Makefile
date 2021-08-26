@@ -1,11 +1,11 @@
 #-Wall -Wextra -Werror
-NAME = bureaucrat
+NAME = form
 
 CC = clang++
-FLAGS = -std=c++98 -MMD -Wall -Wextra -Werror
+FLAGS = -std=c++98 -MMD -Wall -Wextra -Werror -g3
 DIR_S =	./
 DIR_O =	./obj
-SOURCES	= main.cpp Bureaucrat.cpp
+SOURCES	= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp Intern.cpp
 
 SRCS = $(addprefix $(DIR_S)/,${SOURCES})
 OBJS = $(addprefix $(DIR_O)/,${SOURCES:.cpp=.o})
@@ -17,7 +17,7 @@ dir:
 	@if [ ! -d "obj" ]; then mkdir obj; fi
 
 $(DIR_O)/%.o: $(DIR_S)/%.cpp
-	$(CC) $(FLAGS) -c $< -o $@ -g
+	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	@echo "\033[0;35m"

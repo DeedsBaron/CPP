@@ -1,11 +1,11 @@
 #-Wall -Wextra -Werror
-NAME = bureaucrat
+NAME = form
 
 CC = clang++
 FLAGS = -std=c++98 -MMD -Wall -Wextra -Werror
 DIR_S =	./
 DIR_O =	./obj
-SOURCES	= main.cpp Bureaucrat.cpp
+SOURCES	= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp
 
 SRCS = $(addprefix $(DIR_S)/,${SOURCES})
 OBJS = $(addprefix $(DIR_O)/,${SOURCES:.cpp=.o})
